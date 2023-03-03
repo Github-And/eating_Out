@@ -43,5 +43,13 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 
 According to the data, it appears that white people eat out more often than the other races. Black and other races do eat out more often than not eating out, but not compared white people.
 
+```{r}
+table1 <- xtabs(~eatout + race, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical results show that white people say yes to eating out at 83%. Black people eat out 69% of the time and other races eat out 72% of the time. So ranking on which race eats out the most, it would be whites, followed by other, and then blacks.
+
 
 
