@@ -51,5 +51,8 @@ colPerc(table1)
 
 The numerical results show that white people say yes to eating out at 83%. Black people eat out 69% of the time and other races eat out 72% of the time. So ranking on which race eats out the most, it would be whites, followed by other, and then blacks.
 
+```{r}
+fisherXY(mydata$race, mydata$eatout, printAll = TRUE)
+```
 
-
+According to the Fisher's test, the odds ratio is 0.86. The inferential data shows 945 white people say yes to eating out, 136 black people say yes as well, and 75 also say yes to eating out. This shows that white people overall eat out more than the other races.
